@@ -11,6 +11,8 @@ let state = null
 
 console.table([name,age,islog]);
 
+///// some datatypes you should know  ::--->> 
+
 // number => 2 to power 53
 //bigint  (when no. is too long)
 //string => ""

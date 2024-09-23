@@ -33,14 +33,14 @@
 // console.log(2%2);
 
 
-let str="kirti"
-let str2 =" singh"
-let str3 =str+str2
-console.log(str3);
+// let str="kirti"
+// let str2 =" singh"
+// let str3 =str+str2
+// console.log(str3);
 
-console.log("1" + 2);
-console.log("1"+2+3); /// 123 output hai... agar string pahale hai to sabko string ki tarah treat kiya jayega
-console.log(1+2+"3"); /// 33 output hai...  agar string last me hai to pahale number phir string
+// console.log("1" + 2);
+// console.log("1"+2+3); /// 123 output hai... agar string pahale hai to sabko string ki tarah treat kiya jayega
+// console.log(1+2+"3"); /// 33 output hai...  agar string last me hai to pahale number phir string
 
 
 

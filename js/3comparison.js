@@ -55,3 +55,23 @@ let usertw0 = userone
 console.log(usertwo.email);
 console.log(userone.email);
  
+
+////summary...........
+/*null > 0
+
+null< 0
+
+null <= 0 => true bcz null is converted to 0
+
+[Summary]
+
+- Comparing same datatypes are easy to predict 
+
+- Don't compare different data types 
+
+
+<<<<<<<<<<<< stack and heap memorey >>>>>>>
+
+- Primitive data type goes to Stack we get a copy of that value.
+- Non-Primitive data type goes to Heap we get refrence of that value.  
+*/

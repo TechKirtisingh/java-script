@@ -40,3 +40,30 @@ const max=20;
 console.log(Math.floor(Math.random()*(max-min+1))+min);
 
 
+/*
+SUMMARY 
+
+=========== Number ===========
+
+-const score = 400 (implicit)
+-balance = new Number(100) (explicit, this return an object)
+- use _proto_ on both as previous to get all methods
+const balance = 100.12323 
+// used for how many values after decimal
+-balance.toFixed(2) // 100.12
+// used for how many values to take in total (priority is before decimal)
+- balance.toPrecision(4) // 100.1 (returns a string)
+const hundreds = 1000000
+hundreds.toLocaleString('en-IN'); // inserts commas
+-balance.toString()
+
+=========== Maths ===========
+
+// console.log(Math.abs(-4));
+// console.log(Math.round(4.6));
+// console.log(Math.ceil(4.2));
+// console.log(Math.floor(4.9));
+// console.log(Math.min(4, 3, 6, 8));
+// console.log(Math.max(4, 3, 6, 8));
+console.log(Math.random());
+console.log((Math.random()*10) + 1); */

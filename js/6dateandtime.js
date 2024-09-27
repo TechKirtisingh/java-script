@@ -15,10 +15,7 @@
 // console.log(myCreateddate.getTime());
 // console.log(Math.floor(Date.now()/1000)); // mili sec ko sec me convert
 
-let newdate = new Date()
-console.log(newdate.getDay());
-console.log(newdate.getMonth());
-newdate.toLocaleString('default',{weekday: "long",
-    
-})
+// let newdate = new Date()
+// console.log(newdate.getDay());
+// console.log(newdate.getMonth());
 

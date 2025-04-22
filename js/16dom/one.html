@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>DOM learning</title>
+    
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM learning with kirti singh <span style ="display: none;" > hey everyone</span></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa minus amet nihil?</h3>  
+    <input type="password" name="kirti" id="1230432347"  >
+    <input type="datetime" name="date"  >
+    <ul>
+        <li  class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+    </ul>
+
+</div>
+</body>
+</html>
+
+
+
+
+<!-- window ->> document ->> HTML ->> 1. HEAD => a) TITLE ->>> text node 
+                                              => b) Meta  ->>> attributes
+                                  ->> 2. BODY => i) div ->>>> attributes
+                                  
+console ke kuch code or command ==>>
+    
+    1.document.getElementById("title")
+    
+    2.document.getElementById("title").getAttributes("classname or id") 
+    
+    3.document.getElementById("title").setAttributes('class','test' , 'kirti') => here we set the attribute inside the body.
+   
+    4.title.innerHTML 
+     title.innerText ((display that text which is visible)) o
+    {{{ title.textContent as we are using span attribute inside the body and h1 heading  ((display that text which was not visible))  }}} ==>> (we get " DOM learning on Chai aur Code" ) 
+   
+    5. document.querySelector("h1" or '#title' or '.heading' or 'input[type="password"]') ::==>> (we can select only one element and we can change the value of that element)                                 
+   
+    6.document.querySelectorAll("li") :=> const mytemp = document.querySelectorAll('li') ::==>>(it is not an array but it is a node list (node list ki wajah se hm direct color change nahi kr sakte hai hmko value assign karna padega))
+                                :==>> (mytemp[2 or 0 or 1].style.color = "purple" or any color)    
+    ** agar node list ke upar map function use karenge to use convert karna padega array mein **     
+
+    7. mytemp.forEach(function(li){
+     li.style.backgroundColor="red"
+     })
+    
+     8.document.getElementsByClassName  ("list-item") ==> (we get HTML collection which is different from node list and here no option for looping )   
+    ^^^^^  const temp = document.getElementsByClassName  ("list-item") ^^^^^
+     
+     ::==>> temp.forEach (function(li){ console.log(li)})::==> we get error
+     
+     *******HTML collection ko bhi convert karna padega array mein tabhi wo for each fucntion ko use kr payega*******
+
+     9. TO convert HTML collection to array we can use ::
+         Array.from(temp) ::==>> we get array list(_convert in array )
+       const myconvertarray= Array.from(temp)
+       myconvertarray.forEach(function(li){
+         li.style.color="orange"
+       })  
+
+
+
+
+       """"code"""
+
+       const myh2 = document.querrySelectorAll('.classname') {{==>>  classname ca be call by dot(.)classname }}
+       myh2.forEach(function(h2){
+       h2.style.color="red";
+       h2.style.backgroundColor="black";
+       h2.style.padding="10px";
+       h2.style.innertect="hello"  {{==>(we change the test of all h2 heading)}}
+       })

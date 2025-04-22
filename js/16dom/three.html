@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How create node list</title>
+</head>
+<body style="background-color: black; color: red;">
+   <script>
+    const div = document.createElement('h1') // here we print any tag like h1,div,p etc in console inside the create element. 
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random()* 10 +1 )
+    div.setAttribute('title', "generate title")
+    div.style.backgrountColor ="green"
+    div.style.padding="12px"
+    div.innerHTML = "hello world" ;//.classname and .innerhtml:: overwrite the text or value as it first select then bring the value and then over write the value.
+  
+   ///////////or///////////
+
+    const addtext = document.createTextNode("welcome to my world") ;
+    div.appendChild(addtext)
+
+   
+    document.body.appendChild(div) // used to print the value inside the body in div element.
+    //// appendChild is used to generate the value and...||^^
+
+    // createTextNode is used to 
+
+    
+
+   </script> 
+</body>
+</html>

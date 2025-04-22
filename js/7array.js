@@ -1,14 +1,15 @@
 //////// array    ////
+
 //It store multiple items under a single variable name
 // In js arrays aren't primitive
 // Arrays are resizeable and can contain a mix of different datatype
 //arrays are Zero-Indexed
-//**  JS array-copy operations create shallow copies(A shallow copy of an object is a copy whose properties share the same reference(point to the same underlying values)as those of the source object from which the copy are made.)(matlb jo bhi chage karenge wo original me change hoga).
+//**  JS array-copy operations create shallow copies(A shallow copy of an object is a copy whose properties share the same reference(point to the same underlying values)as those of the source object from which the copy are made.)****(matlb jo bhi chage karenge wo original me change hoga).
 
 const myarray = [9,1,2,3,4,5,6,7]
-// const myhero = ["sarukh","prabhash","naagraj"]
-// const myarray2 = new Array (1,2,3,4,5,8,9)
-// console.log(myarray[0]);
+const myhero = ["sarukh","prabhash","naagraj"]
+const myarray2 = new Array (1,2,3,4,5,8,9)
+console.log(myarray[0]);
 
 
 
@@ -22,10 +23,18 @@ const myarray = [9,1,2,3,4,5,6,7]
 // myarray.push(6)
 // console.log(myarray);
 
+// myarray2.push(16)
+// console.log(myarray2);
+
+
 // //@@@@@  ii)pop (to remove last element) 
 
 // myarray.pop()
 // console.log(myarray);
+
+// myarray2.pop()
+// console.log(myarray2);
+
 
 // //@@@@ iii)unshift(element insert at first postion) and shift (remove first element)
 
@@ -40,11 +49,12 @@ const myarray = [9,1,2,3,4,5,6,7]
 // console.log(myarray.includes(0));
 
 // //@@@@  v).join (covert array in string and write array in string formate)
+// inside bracket you can use specified separator to separate array in string formate...
 
-// const newarray = myarray.join()
-// console.log(myarray);
-// console.log(newarray);
-// console.log(typeof (newarray));
+const newarray = myarray.join(';')
+console.log(myarray);
+console.log(newarray);
+console.log(typeof (newarray));
 
 
 /////@@@@ vi)  slice(isme kewal index value hi print ) and splice(original me us index ki value nikal dete hai(change) aur last index bhi print hoga) me diiferece or Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements
@@ -66,10 +76,10 @@ const myarray = [9,1,2,3,4,5,6,7]
 
 // //push(ADD New elements to the array.Appends new elements to the end of an array, and returns the " new length" of the array.)
 
-const marvelhero = ["thor","ironman","spiderman"]
-const hero = ["prabash","nagarjun","akshyakumar"]
-marvelhero.push(hero)
-console.log(marvelhero);
+// const marvelhero = ["thor","ironman","spiderman"]
+// const hero = ["prabash","nagarjun","akshyakumar"]
+// marvelhero.push(hero)
+// console.log(marvelhero);
 
 // ///@@@@@@ viii)  concat(Combines two or more arrays. This method returns a new array without modifying any existing arrays)
 

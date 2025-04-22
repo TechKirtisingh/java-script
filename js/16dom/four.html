@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.....WELCOME kirti....</title>
+</head>
+<body style="background-color: black; color: crimson;">
+    <ul class="language">
+        <li>javascript</li>
+        </ul>
+
+       
+</body>
+
+<script>
+     
+     ///// using function we add list item in ul and this is not an optimize way to write code as it traverse the whole tree.//////////
+
+    function addlang(langname) {
+       const li = document.createElement('li');   /// creating li element     
+       li.innerHTML = `${langname}`;  /// adding value inside the li element 
+       document.querySelector('.language').appendChild(li)  /// selecting the ul element and appending the li element      
+    }
+
+    addlang('python')
+    addlang('java')
+    addlang('C++')
+    addlang('SQL')
+
+///////////or and optimize way to add list item and here you can't traverse hole tree. ///////
+
+    function addoptilang(langName){
+       const li = document.createElement('li');
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+
+    }
+    addoptilang('golang')
+
+
+    //////// @@@@@@@@@@@@@   EDIT  @@@@@@@@@@   ///////////
+    //// yaha pr hamare pass referance hai isley hm query selector se class name ka use nii kr rahe hai...
+
+   const secondlang =  document.querySelector("li:nth-child(2)")/// li: nth-child(2) :: hm third child ko select kr rahe hai..
+   const newli = document.createElement('li')
+   newli.textContent="Mojo"
+   secondlang.replaceWith(newli);
+
+   //// another way to change the value of the html ////
+
+   const firstchild = document.querySelector('li:first-child')  /// first-child ke bich me dash imp hai...
+   firstchild.outerHTML = ' <li> DSA </li> '
+
+
+   ///////////##################   REMOVE    ############## /////////
+
+   const lastlang = document.querySelector("li:last-child")
+   lastlang.remove()
+
+</script>
+
+</html>

@@ -1,6 +1,6 @@
  ///////   for of loop   /////////
 
-////  for of statement loops through the values of an iterable object.It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+////  for of statement loops through the values of an iterable object.It lets you loop over iterable data structures such as Arrays, Strings,"""Maps""", NodeLists, and more:
 
 // ["","",""] ---> array ke andar string...
 // [{},{},{}] ---> array ke andar objects....
